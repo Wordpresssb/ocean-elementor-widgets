@@ -358,7 +358,7 @@ class CallToAction extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' 			=> 'description_typo',
-				'selector' 		=> '{{WRAPPER}} .oew-call-to-action .oew-call-to-action-text',
+				'selector' 		=> '{{WRAPPER}} .oew-call-to-action .oew-call-to-action-description',
 				'scheme' 		=> Scheme_Typography::TYPOGRAPHY_1,
 			]
 		);

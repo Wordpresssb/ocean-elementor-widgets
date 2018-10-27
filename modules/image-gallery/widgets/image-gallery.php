@@ -54,6 +54,7 @@ class ImageGallery extends Widget_Base {
 			[
 				'label'   		=> __( 'Add Images', 'ocean-elementor-widgets' ),
 				'type'    		=> Controls_Manager::GALLERY,
+				'dynamic' 		=> [ 'active' => true ],
 			]
 		);
 
@@ -458,7 +459,7 @@ class ImageGallery extends Widget_Base {
 	}
 
 	protected function render() {
-		$settings = $this->get_settings();
+		$settings = $this->get_settings_for_display();
 
 		$this->add_render_attribute( 'wrap', 'class', 'oew-image-gallery' );
 

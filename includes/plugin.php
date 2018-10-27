@@ -252,24 +252,26 @@ class owpElementorPlugin {
 			true
 		);
 
-		if ( ! empty( $key ) ) {
-			wp_register_script( 'oew-google-map-api',
-				add_query_arg(
-					[ 'key' => $key ],
-					'https://maps.googleapis.com/maps/api/js'
-				),
-				false,
-				false,
-				true
-			);
+		if ( isset( $key ) && ! empty( $key ) ) {
+            wp_register_script( 'oew-google-map-api',
+            	'https://maps.googleapis.com/maps/api/js?key=' . $key,
+            	'',
+            	rand()
+            );
+        } else {
+            wp_register_script( 'oew-google-map-api',
+            	'https://maps.googleapis.com/maps/api/js',
+            	'',
+            	rand()
+            );
+        }
 
-			wp_register_script( 'oew-google-map',
-				plugins_url( '/assets/js/google-map' . $suffix . '.js', OWP_ELEMENTOR__FILE__ ),
-				[ 'jquery' ],
-				false,
-				true
-			);
-		}
+		wp_register_script( 'oew-google-map',
+			plugins_url( '/assets/js/google-map' . $suffix . '.js', OWP_ELEMENTOR__FILE__ ),
+			[ 'jquery' ],
+			false,
+			true
+		);
 
 		wp_register_script( 'oew-image-comparison',
 			plugins_url( '/assets/js/image-comparison' . $suffix . '.js', OWP_ELEMENTOR__FILE__ ),

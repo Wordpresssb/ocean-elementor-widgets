@@ -1,3 +1,7 @@
+= 1.1.2 =
+- Added: Dynamic content  for the Image Gallery widget.
+- Fixed: Google Map widget issue.
+
 = 1.1.1 =
 - Fixed: Small issue with the Circle Progress widget text.
 - Fixed: Issue with the title of the Call To Action widget.

@@ -23,7 +23,6 @@
 			// Add the class in the normal and mobile title
 			$scope.find( '.oew-tab-title[data-tab="'+ $tab_id + '"]' ).addClass( 'oew-active' );
 
-			//$this.addClass( 'oew-active' );
 			// Display the content
 		    $this.parent().parent().find( '#oew-tab-content-' + $tab_id ).addClass( 'oew-active' );
 
