@@ -47,13 +47,13 @@ class BusinessHours extends Widget_Base {
 				'type' 			=> Controls_Manager::REPEATER,
 				'default' 		=> [
 					[
-						'day' => 'Monday',
+						'day' => __( 'Monday', 'ocean-elementor-widgets' ),
 					],
 					[
-						'day' => 'Tuesday',
+						'day' => __( 'Tuesday', 'ocean-elementor-widgets' ),
 					],
 					[
-						'day' => 'Wednesday',
+						'day' => __( 'Wednesday', 'ocean-elementor-widgets' ),
 					],
 				],
 				'fields' 		=> [
@@ -61,15 +61,15 @@ class BusinessHours extends Widget_Base {
                         'name' => 'day',
                         'label' => __( 'Day', 'ocean-elementor-widgets' ),
                         'type' => Controls_Manager::SELECT,
-                        'default' => 'Monday',
+                        'default' => __( 'Monday', 'ocean-elementor-widgets' ),
                         'options' => [
-                            'Monday'    => __( 'Monday', 'ocean-elementor-widgets' ),
-                            'Tuesday'   => __( 'Tuesday', 'ocean-elementor-widgets' ),
-                            'Wednesday' => __( 'Wednesday', 'ocean-elementor-widgets' ),
-                            'Thursday'  => __( 'Thursday', 'ocean-elementor-widgets' ),
-                            'Friday'    => __( 'Friday', 'ocean-elementor-widgets' ),
-                            'Saturday'  => __( 'Saturday', 'ocean-elementor-widgets' ),
-                            'Sunday'    => __( 'Sunday', 'ocean-elementor-widgets' ),
+                            __( 'Monday', 'ocean-elementor-widgets' )    => __( 'Monday', 'ocean-elementor-widgets' ),
+                            __( 'Tuesday', 'ocean-elementor-widgets' )   => __( 'Tuesday', 'ocean-elementor-widgets' ),
+                            __( 'Wednesday', 'ocean-elementor-widgets' ) => __( 'Wednesday', 'ocean-elementor-widgets' ),
+                            __( 'Thursday', 'ocean-elementor-widgets' )  => __( 'Thursday', 'ocean-elementor-widgets' ),
+                            __( 'Friday', 'ocean-elementor-widgets' )    => __( 'Friday', 'ocean-elementor-widgets' ),
+                            __( 'Saturday', 'ocean-elementor-widgets' )  => __( 'Saturday', 'ocean-elementor-widgets' ),
+                            __( 'Sunday', 'ocean-elementor-widgets' )    => __( 'Sunday', 'ocean-elementor-widgets' ),
                         ],
                     ],
                     [

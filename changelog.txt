@@ -1,5 +1,9 @@
+= 1.1.3 =
+- Fixed: Translation issue with the Business Hours widget.
+- Fixed: WPForms widget was not appearing anymore.
+
 = 1.1.2 =
-- Added: Dynamic content  for the Image Gallery widget.
+- Added: Dynamic content for the Image Gallery widget.
 - Fixed: Google Map widget issue.
 
 = 1.1.1 =

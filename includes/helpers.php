@@ -142,7 +142,7 @@ if ( ! function_exists( 'is_wpforms_active' ) ) {
 	function is_wpforms_active() {
 		$return = false;
 
-		if ( class_exists( 'WPForms' ) ) {
+		if ( class_exists( '\WPForms\WPForms' ) ) {
 			$return = true;
 		}
 
