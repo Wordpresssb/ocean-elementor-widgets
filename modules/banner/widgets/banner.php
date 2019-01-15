@@ -90,6 +90,7 @@ class Banner extends Widget_Base {
 				'label'   		=> __( 'Link', 'ocean-elementor-widgets' ),
 				'type'    		=> Controls_Manager::URL,
 				'placeholder' 	=> __( 'https://your-link.com', 'ocean-elementor-widgets' ),
+				'dynamic' 		=> [ 'active' => true ],
 			]
 		);
 

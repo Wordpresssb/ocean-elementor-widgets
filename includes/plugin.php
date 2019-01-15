@@ -81,6 +81,7 @@ class owpElementorPlugin {
 			'recipe',
 			'scroll-up',
 			'search',
+			'search-icon',
 			'skillbar',
 			'table',
 			'tabs',
@@ -88,6 +89,7 @@ class owpElementorPlugin {
 			'toggle',
 			'tooltip',
 			'woo-addtocart',
+			'woo-cart-icon',
 			'woo-slider',
 		];
 	}
@@ -380,6 +382,13 @@ class owpElementorPlugin {
 
 		wp_register_script( 'oew-search',
 			plugins_url( '/assets/js/search' . $suffix . '.js', OWP_ELEMENTOR__FILE__ ),
+			[ 'jquery' ],
+			false,
+			true
+		);
+
+		wp_register_script( 'oew-search-icon',
+			plugins_url( '/assets/js/search-icon' . $suffix . '.js', OWP_ELEMENTOR__FILE__ ),
 			[ 'jquery' ],
 			false,
 			true

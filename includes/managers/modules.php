@@ -54,6 +54,7 @@ class Modules_Manager {
 			'recipe',
 			'scroll-up',
 			'search',
+			'search-icon',
 			'skillbar',
 			'table',
 			'tabs',
